@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Digital Piano</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- AUDIO FILES -->
+     <!-- 3 -->
+    <audio src="audio/A3.mp3" id="A3"></audio>
+    <audio src="audio/Bb3.mp3" id="Bb3"></audio>
+    <audio src="audio/B3.mp3" id="B3"></audio>
+    <!-- 4 -->
+    <audio src="audio/C4.mp3" id="C4"></audio>
+    <audio src="audio/Db4.mp3" id="Db4"></audio>
+    <audio src="audio/D4.mp3" id="D4"></audio>
+    <audio src="audio/Eb4.mp3" id="Eb4"></audio>
+    <audio src="audio/E4.mp3" id="E4"></audio>
+    <audio src="audio/F4.mp3" id="F4"></audio>
+    <audio src="audio/Gb4.mp3" id="Gb4"></audio>
+    <audio src="audio/G4.mp3" id="G4"></audio>
+    <audio src="audio/Ab4.mp3" id="Ab4"></audio>
+    <audio src="audio/A4.mp3" id="A4"></audio>
+    <audio src="audio/Bb4.mp3" id="Bb4"></audio>
+    <audio src="audio/B4.mp3" id="B4"></audio>
+
+    <!-- JAVASCRIPT -->
+    <script src="functions.js"></script>
+   
+    <!-- PIANO -->
+    <header><h1>Digital Piano</h1></header>
+    <main>
+    <div id="piano">
+        <!-- 3 -->
+        <div class="key-holder">
+        <div class="white-key" onClick="A3()">A</div>
+        <div class="black-key" onClick="Bb3()">A# Bb</div>
+        </div>
+        <div class="white-key" onClick="B3()">B</div>
+        <!-- 4 -->
+        <div class="key-holder">
+        <div class="white-key" onClick="C4()">C </div>
+        <div class="black-key" onClick="Db4()">C# Db</div>
+        </div>
+        <div class="key-holder">
+        <div class="white-key" onClick="D4()">D</div>
+        <div class="black-key" onClick="Eb4()">D# Eb</div>
+        </div>
+        <div class="white-key" onClick="E4()">E</div>
+        <div class="key-holder">
+        <div class="white-key" onClick="F4()">F</div>
+        <div class="black-key" onClick="Gb4()">F# Gb</div>
+        </div>
+        <div class="key-holder">
+        <div class="white-key" onClick="G4()">G</div>
+        <div class="black-key" onClick="Ab4()">G# Ab</div>
+        </div>
+        <div class="key-holder">
+        <div class="white-key" onClick="A4()">A</div>
+        <div class="black-key" onClick="Bb4()">A# Bb</div>
+        </div>
+        <div class="white-key" onClick="B4()">B</div>
+    </div>
+    </main>
+    <footer>Copyright © 2025 - Kaan Ibrahim</footer>
+</body>
+</html>
