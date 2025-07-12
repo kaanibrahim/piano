@@ -45,3 +45,40 @@ function Bb4(){
 function B4(){
     document.getElementById("B4").play();
 }
+//5
+function C5(){
+    document.getElementById("C5").play();
+}
+function Db5(){
+    document.getElementById("Db5").play();
+}
+function D5(){
+    document.getElementById("D5").play();
+}
+function Eb5(){
+    document.getElementById("Eb5").play();
+}
+function E5(){
+    document.getElementById("E5").play();
+}
+function F5(){
+    document.getElementById("F5").play();
+}
+function Gb5(){
+    document.getElementById("Gb5").play();
+}
+function G5(){
+    document.getElementById("G5").play();
+}
+function Ab5(){
+    document.getElementById("Ab5").play();
+}
+function A5(){
+    document.getElementById("A5").play();
+}
+function Bb5(){
+    document.getElementById("Bb5").play();
+}
+function B5(){
+    document.getElementById("B5").play();
+}
