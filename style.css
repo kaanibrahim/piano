@@ -9,7 +9,8 @@ h1 {
 #piano {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 2.5%;
+    width: 90vw;
+    margin:  auto;
 }
 
 .key-holder {
