@@ -10,86 +10,86 @@ function playNote(id) {
 }
 
 //3
- function A3(){
-       document.getElementById("A3").play();
+function A3(){
+    playNote("A3");
 }
 function Bb3(){
-    document.getElementById("Bb3").play();
+    playNote("Bb3");
 }
 function B3(){
-    document.getElementById("B3").play();
+    playNote("B3");
 }
 //4
 function C4(){
-    document.getElementById("C4").play();
+    playNote("C4");
 }
 function Db4(){
-    document.getElementById("Db4").play();
+    playNote("Db4");
 }
 function D4(){
-    document.getElementById("D4").play();
+    playNote("D4");
 }
 function Eb4(){
-    document.getElementById("Eb4").play();
+    playNote("Eb4");
 }
 function E4(){
-    document.getElementById("E4").play();
+    playNote("E4");
 }
 function F4(){
-    document.getElementById("F4").play();
+    playNote("F4");
 }
 function Gb4(){
-    document.getElementById("Gb4").play();
+    playNote("Gb4");
 }
 function G4(){
-    document.getElementById("G4").play();
+    playNote("G4");
 }
 function Ab4(){
-    document.getElementById("Ab4").play();
+    playNote("Ab4");
 }
 function A4(){
-    document.getElementById("A4").play();
+    playNote("A4");
 }
 function Bb4(){
-    document.getElementById("Bb4").play();
+    playNote("Bb4");
 }
 function B4(){
-    document.getElementById("B4").play();
+    playNote("B4");
 }
 //5
 function C5(){
-    document.getElementById("C5").play();
+    playNote("C5");
 }
 function Db5(){
-    document.getElementById("Db5").play();
+    playNote("Db5");
 }
 function D5(){
-    document.getElementById("D5").play();
+    playNote("D5");
 }
 function Eb5(){
-    document.getElementById("Eb5").play();
+    playNote("Eb5");
 }
 function E5(){
-    document.getElementById("E5").play();
+    playNote("E5");
 }
 function F5(){
-    document.getElementById("F5").play();
+    playNote("F5");
 }
 function Gb5(){
-    document.getElementById("Gb5").play();
+    playNote("Gb5");
 }
 function G5(){
-    document.getElementById("G5").play();
+    playNote("G5");
 }
 function Ab5(){
-    document.getElementById("Ab5").play();
+    playNote("Ab5");
 }
 function A5(){
-    document.getElementById("A5").play();
+    playNote("A5");
 }
 function Bb5(){
-    document.getElementById("Bb5").play();
+    playNote("Bb5");
 }
 function B5(){
-    document.getElementById("B5").play();
+    playNote("B5");
 }
