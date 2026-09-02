@@ -1,35 +1,12 @@
-// --- Web Audio setup ---
-// We decode every note's mp3 into memory once, up front. Playing a note
-// then just fires the already-decoded buffer through a fresh audio node,
-// so there's no re-buffering delay and any number of notes can overlap.
-const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-const audioBuffers = {};
-
-function loadSounds() {
-    document.querySelectorAll("audio[id]").forEach(function (el) {
-        const id = el.id;
-        const src = el.getAttribute("src");
-        fetch(src)
-            .then(function (res) { return res.arrayBuffer(); })
-            .then(function (data) { return audioContext.decodeAudioData(data); })
-            .then(function (buffer) { audioBuffers[id] = buffer; })
-            .catch(function (err) { console.error("Could not load note", id, err); });
-    });
-}
-window.addEventListener("DOMContentLoaded", loadSounds);
-
-// Plays a note. Each call creates a brand new source node from the
-// pre-decoded buffer, so overlapping/rapid presses never cut each other off.
+// Plays a note by cloning its <audio> element each time,
+// so overlapping/rapid presses of the same or different notes
+// don't cut each other off.
 function playNote(id) {
-    if (audioContext.state === "suspended") {
-        audioContext.resume();
-    }
-    const buffer = audioBuffers[id];
-    if (!buffer) return; // still loading, ignore this press
-    const source = audioContext.createBufferSource();
-    source.buffer = buffer;
-    source.connect(audioContext.destination);
-    source.start(0);
+    const original = document.getElementById(id);
+    const sound = original.cloneNode();
+    sound.play();
+    // Clean up the clone once it finishes playing
+    sound.addEventListener("ended", () => sound.remove());
 }
 
 //3
