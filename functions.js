@@ -1,4 +1,15 @@
- //3
+// Plays a note by cloning its <audio> element each time,
+// so overlapping/rapid presses of the same or different notes
+// don't cut each other off.
+function playNote(id) {
+    const original = document.getElementById(id);
+    const sound = original.cloneNode();
+    sound.play();
+    // Clean up the clone once it finishes playing
+    sound.addEventListener("ended", () => sound.remove());
+}
+
+//3
  function A3(){
        document.getElementById("A3").play();
 }
